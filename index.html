@@ -1,0 +1,69 @@
+<html>
+<title>Music Downloader</title>
+<style>
+    .m1{
+        background-color: #1c1c19;
+        transition: all .5s linear;
+        position: relative;
+    }
+    .m1:hover{
+        background-color: #47473f;
+    }
+    .img1{
+        position: relative;
+    }
+    p{
+        position: relative;
+        text-align: right;
+        top: -40px;
+        left: 5px;
+        font-family: monospace;
+        font-size: large;
+        color: white;
+    }
+    .m1 .img1{
+        transition: all .4s linear;
+    }
+    .m1:hover .img1{
+        opacity: 0.5;
+    }
+    .m1:hover .img2{
+        transition:  all .4s linear;
+        opacity: 1;
+    }
+    .img2{
+        position: absolute;
+        left: 18px;
+        bottom: 15px;
+        opacity: 0;
+    }
+</style>
+<script>
+        function playAudio(url) {
+        new Audio(url).play();
+}
+</script>
+<body style="background-color: #1c1c19;" >
+    <div class="m1">
+        <img class="img1" src="https://upload.wikimedia.org/wikipedia/en/1/1d/24kGoldn_-_Mood.png" height="100" width="100">
+        <p style="display: inline;" class="test1">24kgoldn - Mood (feat. iann dior)</p>
+        <img onclick=playAudio('https://www.mboxdrive.com/Mood.mp3') class="img2" src="/Icons/Play.png" width="70" height="70">
+
+    </div>
+    <div class="m1">
+        <img src="https://www.music-bazaar.mobi/album-images/vol29/1051/1051009/2917142-big/Locked-Away-Dancehall-Remix-Single-cover.jpg" width="100" height="100">
+        <p style="display: inline;">Adam Lang - Locked Away</p>
+        <img onclick=playAudio('https://www.mboxdrive.com/Adam%20Lang%20-%20Locked%20Away.mp3') class="img2" src="/Icons/Play.png" width="70" height="70">
+    </div>
+    <div class="m1">
+        <img src="/Icons/Banners - Someone To You.jpg" width="100" height="100">
+        <p style="display: inline;">Banners - Someone To You</p>
+        <img onclick=playAudio('https://www.mboxdrive.com/Banners%20-%20Someone%20To%20You.mp3') class="img2" src="/Icons/Play.png" width="70" height="70">
+    </div>
+    <div class="m1">
+        <img src="Icons/Bars and Melody - Lighthouse.jpg" width="100" height="100">
+        <p style="display: inline;">Bars and Melody - Lighthouse</p>
+        <img onclick=playAudio('https://www.mboxdrive.com/Bars%20and%20Melody%20-%20Lighthouse.mp3') class="img2" src="/Icons/Play.png" width="70" height="70">
+    </div>
+
+</body>
